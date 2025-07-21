@@ -8,10 +8,10 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 body { margin: 0; font-size: 13px; line-height: 1.231; }
-body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+body, button, input, select, textarea { font-family: sans-serif; color:#AFDDE5; }
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: 0 2px 5px #000; }
+::selection { background: #fe57a1; color: #fff; text-shadow: 0 2px 5px #000; }
 
 a { color: #00e; }
 a:visited { color: #551a8b; }
@@ -63,7 +63,7 @@ td { vertical-align: top; }
 /* ================================================================================ *\
 	Main
 \* ================================================================================ */
-html, body {background:#afdde5; box-shadow:inset 0 1px 0 #fff; text-align:center; font-family:Tahoma, Helvetica, sans-serif; text-transform:lowercase; text-shadow:0 1px 0 #fff; cursor:default;}
+html, body {background:#003135; box-shadow:inset 0 1px 0 #fff; text-align:center; font-family:Tahoma, Helvetica, sans-serif; text-transform:lowercase; text-shadow: 0 2px 5px #000; cursor:default;}
 #container {width:100%; max-width:900px; min-width:300px; margin:0 auto; position:relative;}
 .misc #container {width:90%;}
 
@@ -82,7 +82,7 @@ a, a:hover, a:visited {color:inherit; font-weight:bolder; text-decoration:underl
 a:hover {text-decoration:none;}
 a.a-fill {width:100%; height:100%; display:block;}
 
-.person div, .main nav, div#thethoughtsflash {background:#262626; background:linear-gradient(top, #2e2e2e, #1f1f1f); border:1px solid #000; box-shadow:0 2px 10px -1px #000, inset 0 1px 0 rgba(255, 255, 255, 0.1); color:#e5e5e5; text-shadow:0 0 0 transparent, 0 1px #000; transition:all 1s linear;}
+.person div, .main nav, div#thethoughtsflash {background:#262626; background:linear-gradient(top, #2e2e2e, #1f1f1f); border:1px solid #000; box-shadow:0 2px 10px -1px #000, inset 0 1px 0 rgba(255, 255, 255, 0.1); color:#e5e5e5; text-shadow: 0 2px 5px #000; transition:all 1s linear;}
 
 #yt-music, audio {position:absolute; left:-9999px;}
 
@@ -116,7 +116,16 @@ a#home {transition:none;}
 #home img {display:none;}
 
 h1, h2, h3, h4, h5, h6 {margin:0; padding:0; color:# f5f5f5;}
-h1 {width:70%; margin:102px 0 0 -26px; float:left; font-size:1.75em; font-weight:lighter; letter-spacing:1px;}
+h1 {
+    font-size: 2.5em;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 80px auto 20px;
+    width: 100%;
+    float: none;
+    clear: both;
+}
 h2 {font-size:3.077em; font-weight:600;}
 h3 {font-size:2.308em;}
 h4 {color:#404040; font-size:1.077em; font-weight:bolder;}
@@ -215,7 +224,7 @@ footer nav span {margin:0 5px; position:relative; top:1px;}
 .panel {width:100%; height:100px; position:absolute; top:50%; left:0; margin-top:-50px; opacity:0; color:# f5f5f5; font-size:1.385em; font-weight:bolder; text-align:center; transition:opacity 0.5s linear;}
 .current, #final.current {opacity:1; z-index:1; transition:opacity 0.25s linear;}
 .used {opacity:0;}
-.sub {display:block; margin-top:1em; color:#a5a5a5; font-size:0.722em; font-weight:normal;}
+.sub {display:block; margin-top:1em; color:#0FA4AF; font-size:0.722em; font-weight:normal;}
 #final {width:100%; height:100%; position:absolute; top:0; left:0; z-index:-1; font-size:1em; color:# f5f5f5; font-weight:normal; text-align:center;}
 .panel a {font-weight:bolder; text-decoration:underline;}
 .panel a:hover {text-decoration:none;}
@@ -227,16 +236,16 @@ footer nav span {margin:0 5px; position:relative; top:1px;}
 \* ================================================================================ */
 #thoughts, #thoughts body {background:#06061e; box-shadow:none;}
 #thoughts header {height:75px; padding-bottom:0;}
-#thoughts h2 {color:#65657d; text-shadow:0 0 10px #000;}
+#thoughts h2 {color:#65657d; text-shadow: 0 2px 5px #000;}
 #thoughts #container:before {display:none !important;}
-a#thoughts-home {color:#65657d; text-shadow:0 0 5px #000;}
-#thoughts .panel {width:100%; margin:0; position:relative; opacity:1; z-index:1; color:#65657d; text-shadow:0 0 5px #000;}
+a#thoughts-home {color:#65657d; text-shadow: 0 2px 5px #000;}
+#thoughts .panel {width:100%; margin:0; position:relative; opacity:1; z-index:1; color:#65657d; text-shadow: 0 2px 5px #000;}
 #thethoughtsflash {margin:30px 0;}
 div#thethoughtsflash {margin:100px 0; line-height:40px;}
 #thethoughtsflash img {margin:-3px 10px 0;}
 object#thethoughtsflash {position:relative; left:-30px;}
-#thoughts #home div {color:#65657d; text-shadow:0 0 5px #000;}
-#thoughts-done {width:100%; margin:0 0 600px; border-top:1px dashed #17171C; color:#65657d; text-shadow:0 0 5px #000; text-align:center;}
+#thoughts #home div {color:#65657d; text-shadow: 0 2px 5px #000;}
+#thoughts-done {width:100%; margin:0 0 600px; border-top:1px dashed #17171C; color:#65657d; text-shadow: 0 2px 5px #000; text-align:center;}
 #thoughts-done span {background:#06061e; display:inline-block; margin-top:-0.75em; padding:0 20px;}
 #thoughts #final {margin-bottom:300px;}
 #thoughts .donate99 {background-image:url('../img/donate2.gif');}
@@ -250,7 +259,16 @@ object#thethoughtsflash {position:relative; left:-30px;}
 \* ================================================================================ */
 .error, .error body, .error .v-align {height:100%;}
 .error .v-middle {background:url('../img/404.gif') top center no-repeat; padding-top:155px;}
-.error h1 {width:100%; display:block; margin:0; float:none; font-size:2.154em; font-weight:bolder;}
+.error h1 {
+    font-size: 2.5em;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 80px auto 20px;
+    width: 100%;
+    float: none;
+    clear: both;
+}
 .error p {display:block;}
 
 .error-txt {color:#e63838 !important;}
@@ -260,7 +278,16 @@ object#thethoughtsflash {position:relative; left:-30px;}
 \* ================================================================================ */
 .ten_things, .ten_things body, .ten_things .v-align {height:100%;}
 .ten_things .v-middle {width:760px;}
-.ten_things h1 {width:100%; display:block; font-size: 30px; float:none; font-weight:bold;}
+.ten_things h1 {
+    font-size: 2.5em;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 80px auto 20px;
+    width: 100%;
+    float: none;
+    clear: both;
+}
 .ten_things h2 {width:100%; display:block; font-size:20px; float:none;}
 .ten_things li {margin-bottom:40px;}
 .ten_things ol {text-align:left;}
@@ -302,13 +329,22 @@ object#thethoughtsflash {position:relative; left:-30px;}
 	.misc header .message em {display:inline; margin:0 10px 0 0; font-size:1.231em; font-family:Arial, sans-serif; font-weight:lighter; font-style:italic;}
 	.misc header .message span {font-size:0.846em;}
 	
-	h1 {width:50%;}
+	h1 {
+    font-size: 2.5em;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 80px auto 20px;
+    width: 100%;
+    float: none;
+    clear: both;
+}
 	
 	#people .person.empty {display:none;}
 	
 	#people .people-row {display:inline; opacity:0; transition:opacity 150ms linear;}
 	
-	#people .person div {width:357px; display:block; padding:7px; position:absolute; left:-162px; opacity:0; text-shadow:none; text-align:left; z-index:80; visibility:hidden; transform:scale(0.975); transition:all 250ms linear 0.175s;}
+	#people .person div {width:357px; display:block; padding:7px; position:absolute; left:-162px; opacity:0; text-shadow: 0 2px 5px #000; text-align:left; z-index:80; visibility:hidden; transform:scale(0.975); transition:all 250ms linear 0.175s;}
 	#people .smaller div {width:270px; left:-118px;}
 	#people .smallest div {width:153px; left:-59px;}
 	#people .person:hover div {opacity:1; z-index:9999; visibility:visible; transform:scale(1);}
@@ -417,3 +453,13 @@ object#thethoughtsflash {position:relative; left:-30px;}
 	#final {width:700px;}
 
 }
+
+
+#home-header div {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: none !important;
+    backdrop-filter: blur(5px);
+}
+
