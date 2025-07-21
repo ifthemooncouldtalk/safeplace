@@ -63,7 +63,7 @@ td { vertical-align: top; }
 /* ================================================================================ *\
 	Main
 \* ================================================================================ */
-html, body {background:#f7f7f7; box-shadow:inset 0 1px 0 #fff; text-align:center; font-family:Tahoma, Helvetica, sans-serif; text-transform:lowercase; text-shadow:0 1px 0 #fff; cursor:default;}
+html, body {background:#003135; box-shadow:inset 0 1px 0 #fff; text-align:center; font-family:Tahoma, Helvetica, sans-serif; text-transform:lowercase; text-shadow:0 1px 0 #fff; cursor:default;}
 #container {width:100%; max-width:900px; min-width:300px; margin:0 auto; position:relative;}
 .misc #container {width:90%;}
 
